@@ -1,0 +1,253 @@
+ .about-page {
+            background-color: #f5f2ec;
+            min-height: 100vh;
+            padding: 60px 0;
+        }
+
+        .about-hero {
+            text-align: center;
+            margin-bottom: 60px;
+            padding: 40px;
+            background: white;
+            border-radius: 40px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .about-hero h1 {
+            font-size: 3.5rem;
+            font-weight: 400;
+            color: #1f1b17;
+            margin-bottom: 20px;
+            letter-spacing: -0.02em;
+        }
+
+        .about-hero p {
+            font-size: 1.2rem;
+            color: #5f4e41;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .about-story {
+            display: flex;
+            gap: 50px;
+            margin-bottom: 80px;
+            background: white;
+            border-radius: 40px;
+            padding: 50px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .about-story-content {
+            flex: 1;
+        }
+
+        .about-story-content h2 {
+            font-size: 2.2rem;
+            font-weight: 400;
+            color: #1f1b17;
+            margin-bottom: 25px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .about-story-content h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 80px;
+            height: 3px;
+            background-color: #a57c5c;
+        }
+
+        .about-story-content p {
+            font-size: 1.1rem;
+            color: #3f332b;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .about-story-image {
+            flex: 1;
+            background-color: #e0d5c9;
+            border-radius: 30px;
+            background-image: url('about-workshop.jpg');
+            background-size: cover;
+            background-position: center;
+            min-height: 400px;
+        }
+
+        .about-mission {
+            text-align: center;
+            margin-bottom: 80px;
+            padding: 60px;
+            background: linear-gradient(135deg, #1f1b17 0%, #3f332b 100%);
+            border-radius: 40px;
+            color: white;
+        }
+
+        .about-mission h2 {
+            font-size: 2.5rem;
+            font-weight: 400;
+            margin-bottom: 30px;
+        }
+
+        .about-mission p {
+            font-size: 1.3rem;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.8;
+            opacity: 0.9;
+        }
+
+        .about-categories {
+            margin-bottom: 80px;
+        }
+
+        .about-categories h2 {
+            font-size: 2.2rem;
+            font-weight: 400;
+            color: #1f1b17;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .category-card {
+            background: white;
+            border-radius: 30px;
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s;
+        }
+
+        .category-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .category-icon {
+            width: 100px;
+            height: 100px;
+            background-color: #f0eae4;
+            border-radius: 50%;
+            margin: 0 auto 25px;
+            background-size: 60px;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .icon-soft { background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23a57c5c"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>'); }
+        .icon-wood { background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23a57c5c"><path d="M12 2L2 7v10l10 5 10-5V7l-10-5zm0 2.5L19.5 9 12 12.5 4.5 9 12 4.5zM4 16v-6l6 3v6l-6-3zm10 3v-6l6-3v6l-6 3z"/></svg>'); }
+        .icon-clay { background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23a57c5c"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>'); }
+
+        .category-card h3 {
+            font-size: 1.8rem;
+            font-weight: 400;
+            color: #1f1b17;
+            margin-bottom: 15px;
+        }
+
+        .category-card p {
+            color: #5f4e41;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .category-features {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+        }
+
+        .category-features li {
+            padding: 8px 0;
+            color: #3f332b;
+            position: relative;
+            padding-left: 25px;
+        }
+
+        .category-features li::before {
+            content: '-';
+            color: #000000;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        .about-values {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-bottom: 80px;
+        }
+
+        .value-card {
+            background: white;
+            border-radius: 30px;
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .value-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .value-card h3 {
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: #1f1b17;
+            margin-bottom: 15px;
+        }
+
+        .value-card p {
+            color: #5f4e41;
+            line-height: 1.6;
+        }
+
+        .about-team {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .about-team h2 {
+            font-size: 2.2rem;
+            font-weight: 400;
+            color: #1f1b17;
+            margin-bottom: 30px;
+        }
+
+        .team-text {
+            max-width: 800px;
+            margin: 0 auto;
+            color: #5f4e41;
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+
+        @media (max-width: 900px) {
+            .about-story {
+                flex-direction: column;
+            }
+            
+            .categories-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .about-values {
+                grid-template-columns: 1fr;
+            }
+            
+            .about-hero h1 {
+                font-size: 2.5rem;
+            }
+        }
